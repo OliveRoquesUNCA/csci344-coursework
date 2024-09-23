@@ -1,0 +1,101 @@
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+header {
+  background-color: #013672;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+header img,
+footer img {
+  width: 200px;
+}
+
+nav {
+  display: flex;
+  justify-self: center;
+  width: 300px;
+  padding-top: 3%;
+  justify-content: space-between;
+}
+
+nav > a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3%;
+}
+
+h2 {
+  margin-top: 5%;
+}
+.passion-one-regular {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.passion-one-bold {
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.passion-one-black {
+  font-family: "Passion One", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "card card"
+    "card card";
+  gap: 10px;
+}
+
+.card {
+  padding: 5%;
+  border: solid;
+  border-color: grey;
+  grid-area: "card";
+  grid-column: auto;
+  display: grid;
+  grid-template-columns: 25vw 10vw;
+  grid-template-areas: "text image";
+}
+
+.card > .card-info {
+  grid-area: "text";
+  object-fit: cover;
+}
+.card > img {
+  grid-area: "image";
+  width: 10vw;
+  height: 10vh;
+}
