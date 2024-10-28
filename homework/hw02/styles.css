@@ -1,0 +1,155 @@
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a,
+u {
+  text-decoration: none;
+}
+
+/* Begin Debugging Code */
+header,
+main,
+section,
+article,
+nav {
+  padding: 10px;
+  margin: 10px;
+}
+
+.comfortaa-aside,
+body > header,
+main,
+.news-feed {
+  padding: 10px;
+  margin: 10px;
+}
+
+/* End Debugging Code */
+
+article {
+  min-height: 300px;
+}
+
+#top-header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  max-height: 5vw;
+  display: flex;
+  padding: 1vw;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  border-color: transparent;
+}
+
+main {
+  margin-top: 100px;
+  width: 50vw;
+  margin-left: 5vw;
+}
+
+.comfortaa-logo {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  align-self: center;
+}
+.comfortaa-nav {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 0;
+  align-items: center;
+}
+
+aside {
+  position: fixed;
+  right: 50px;
+  top: 100px;
+  background-color: white;
+  border-color: transparent;
+  min-width: 300px;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+}
+
+.rounded {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+}
+.comfortaa-aside {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  width: 35vw;
+  font-style: normal;
+}
+.recommendations-profile {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.comfortaa-username {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-weight: normal;
+  font-size: medium;
+  border-color: transparent;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-self: flex-start;
+}
+.recommendations {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+@media (max-width: 800px) {
+  aside {
+    display: none;
+  }
+
+  #top-header {
+    max-height: 9vw;
+  }
+
+  main {
+    margin-top: 100px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 5vw;
+  }
+}
